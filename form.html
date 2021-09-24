@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Formulaire HTML</title>
+   </head>
+   <body>
+         <form action="/form.html" method="post">
+            <label for="username">Prénom: </label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="lastname" >Nom: </label>
+            <input type="text" id="lastname" required>
+            <br>
+            <label for="number" >Age: </label>
+            <input type="number" id="number" required>
+            <br>
+            Choisissez le genre:
+            <input type="radio" name="genre" id="male" value="male">
+            <label for="male">Homme</label>
+            <input type="radio" name="genre" id="women" value="women">
+            <label for="women">Femme</label>
+            <input type="radio" name="genre" id="autre" value="autre">
+            <label for="autre">Autre</label>
+            <br>
+            <label for="email" >Adresse Mail: </label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="text" >Adresse Postal: </label>
+            <input type="text" id="text" required>
+            <br>
+            <label for="text" >Code Postal: </label>
+            <input type="text" pattern="[0-9]{5}" required>
+            <br>
+            <label for="city" >Ville: </label>
+            <select name="city" id="city">
+               <option value="">Choisissez votre ville</option>
+               <option value="Lille">Lille</option>
+               <option value="Paris">Paris</option>
+               <option value="Lyon">Lyon</option>
+               <option value="Marseille">Marseille</option>
+               <option value="Nice">Nice</option>
+               <option value="Toulon">Toulon</option>
+               <option value="Bordeaux">Bordeaux</option>
+               <option value="Beziers">Beziers</option>
+               <option value="Metz">Metz</option>
+               <option value="Nante">Nante</option>
+               <option value="Perpignan">Perpignan</option>
+            </select>
+            <br>
+            <label for="work">Métier exercé: </label>
+            <select name="work" id="work">
+               <option value="">Choisissez votre métier</option>
+               <option value="Dévellopeur">Dévellopeur</option>
+               <option value="Fleuriste">Fleuriste</option>
+               <option value="Serveur">Serveur</option>
+               <option value="Mécanicien">Mécanicien</option>
+               <option value="Plombier">Plombier</option>
+               <option value="Éléctricien">Éléctricien</option>
+               <option value="Plaquiste">Plaquiste</option>
+               <option value="Maçon">Maçon</option>
+               <option value="Boulanger">Boulanger</option>
+               <option value="Patissier">Patissier</option>
+               <option value="Conseiller commercial">Conseiller commercial</option>
+            </select>
+            <br>
+            <label for="nationalite">Nationalité: </label>
+            <select name="nationalite" id="nationalite">
+               <option value="">Quelle est votre nationalité ?</option>
+               <option value="AFG">Afghane (Afghanistan)</option>
+               <option value="ALB">Albanaise (Albanie)</option>
+               <option value="DZA">Algérienne (Algérie)</option>
+               <option value="DEU">Allemande (Allemagne)</option>
+               <option value="USA">Americaine (États-Unis)</option>
+               <option value="AND">Andorrane (Andorre)</option>
+               <option value="AGO">Angolaise (Angola)</option>
+               <option value="ATG">Antiguaise-et-Barbudienne (Antigua-et-Barbuda)</option>
+               <option value="ARG">Argentine (Argentine)</option>
+               <option value="ARM">Armenienne (Arménie)</option>
+               <option value="AUS">Australienne (Australie)</option>
+               <option value="AUT">Autrichienne (Autriche)</option>
+               <option value="AZE">Azerbaïdjanaise (Azerbaïdjan)</option>
+               <option value="BHS">Bahamienne (Bahamas)</option>
+               <option value="BHR">Bahreinienne (Bahreïn)</option>
+               <option value="BGD">Bangladaise (Bangladesh)</option>
+               <option value="BRB">Barbadienne (Barbade)</option>
+               <option value="BEL">Belge (Belgique)</option>
+            </select>
+            <br>
+            <label for="start">Date de naissance: </label>
+            <input type="date" id="start" value="2021-09-24" min="1970-01-01" max="2030-01-01">
+            <br>
+            <label for="pays">Pays de naissance:  </label>
+            <select name="pays" id="pays">
+               <option value="Votre pays de naissance">Votre pays de naissance</option>
+               <option value="Afganistan">Afghanistan</option>
+               <option value="Albania">Albania</option>
+               <option value="Algeria">Algeria</option>
+               <option value="American Samoa">American Samoa</option>
+               <option value="Andorra">Andorra</option>
+               <option value="Angola">Angola</option>
+               <option value="Anguilla">Anguilla</option>
+               <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+               <option value="Argentina">Argentina</option>
+               <option value="Armenia">Armenia</option>
+               <option value="Aruba">Aruba</option>
+               <option value="Australia">Australia</option>
+               <option value="Austria">Austria</option>
+            </select>
+            <br>
+            <label for="text">Numéro de sécurité social:  </label>
+            <input type="text" name="text" pattern="[0-9]{13}" required>
+            <br>
+            <label for="text">Numéro de passeport:  </label>
+            <input type="text" pattern="[0-9]{2}[a-z]{2}[0-9]{5}" required>
+            <br>
+            <label for="delivre">Date de délivrance du passeport:  </label>
+            <input type="date" value="2021-09-24" min="1970-01-01" max="2030-01-01" required>
+            <br>
+            <label for="delivre">Date de validité du passeport: </label>
+            <input type="date" id="delivre" value="2021-09-24" min="1970-01-01" max="2030-01-01" required>
+            <br>
+            <br>
+            <button type="submit">Validez</button>
+         </form>
+         <br>
+   </body>
+</html>
